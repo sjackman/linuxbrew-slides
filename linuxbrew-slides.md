@@ -1,18 +1,16 @@
 ---
-title: 'Linuxbrew and Homebrew-Science'
+title: 'Homebrewing Science'
 author: 'Shaun D Jackman'
 date: '2016-07-09'
 history: true
 slideNumber: true
 ---
 
-## Linuxbrew
+## Homebrewing Science
 
-### and Homebrew-Science
+### with Linuxbrew and Homebrew
 
-BOSC 2016, Orlando, Florida, USA
-
-| Shaun Jackman
+| Shaun Jackman, Inanc Birol
 | [\@sjackman][] | [github.com/sjackman][] | [sjackman.ca][]
 
 | [BC Cancer Agency Genome Sciences Centre][]
@@ -33,35 +31,41 @@ Reproducible Science
 
 ## Reproducible Science
 
-Given the manuscript, someone can...
+With the manuscript, someone can...
 
-+ Repeat the experiment
-+ Analyse the data
-+ Draw the same conclusion
++ Reproduce an experiment
++ Generate new data
++ Repeat the data analysis
++ Draw the same conclusions
 
 ## Repeatable Science
 
-Given the same data and source code, someone can...
+With the data and source code, someone can...
 
-+ Repeat the analysis and reproduce the same results
-+ Repeatable by yourself, at least
++ Repeat the analysis
++ Reproduce the same results
++ The analysis is repeatable by yourself
 + Hopefully repeatable by others as well!
 
-## Reproducible vs. Repeatable
+## Reproducible and Repeatable
 
-Science is built upon reproducible experiments
+Science is built on reproducible experiments.
 
-+ Often we don't even accomplish repeatable science
-+ So let's start there
+Reproducible experiments requires repeatable analyses.
 
 ## To Repeat an Analysis
 
-+ Download the data --- requires Open Science
-+ Download the tools --- requires Open Source
++ Requires data (Open Science)
++ Requires tools (Open Source)
 
 . . .
 
-+ Install the tools --- requires inexhaustible patience
++ Requires inexhaustible patience  
+  to install the tools and their dependencies
+
+------------------------------------------------------------
+
+![Dependencies of a few bioinformatics tools](images/dependency-graph.png)
 
 Linuxbrew Homebrew
 ================================================================================
@@ -76,44 +80,46 @@ Linuxbrew Homebrew
 
 ## Linuxbrew
 
-+ Install software packages in your home directory
-+ Does not require root access or `sudo`
-+ Use the same package manager on your Mac laptop and Linux server
++ Install software packages where you want
++ Takes care of recursive dependencies
++ No need for root access or sudo
++ Use the same package manager on your  
+  Mac laptop and Linux server
 + Supports any Linux distribution from the last decade
-+ Installs packages and their recursive dependencies
++ Easily install recent versions of gcc and glibc  
+  in your home directory
 
 ## Linuxbrew
 
-+ Up-to-date software, including bioinformatics software
-+ Easily install recent versions of `gcc` and `glibc` in your home directory
++ Up-to-date software, including bioinformatics
 + Install precompiled binary packages or from source
-+ Maintained by a fervent community of contributors
-+ 600 science packages, 250 bioinformatics, 3600 core
++ Install an entire pipeline of tools from a given date  
+  in the past (future not yet supported)
 
 ## Homebrew Science
 
 ![Tons of science software for Linuxbrew and Homebrew](images/homebrew-science.png)
 
-------------------------------------------------------------
+## Community
 
-![Dependencies of bioinformatics tools in Homebrew](images/dependency-graph.png)
++ Maintained by a fervent community of  
+  maintainers and contributors
++ 250 bioinformatics packages and 110 contributors
++ 600 science packages and 450 contributors
++ 3,600 core packages and 5,700 contributors
++ 4,400 active Linuxbrew users in 30 days
 
 ## Conclusion
 
 + Open Science and Open Source are critical components of reproducible science
-+ You must be able to install that software
-+ Linuxbrew streamlines the installation of software in a repeatable fashion
++ Linuxbrew streamlines the repeatable installation of software tools
+
+`brew install good-science`
+
+Thanks to all the maintainers and contributors of Homebrew, Linuxbrew and Homebrew-Science!
 
 fin
 ================================================================================
-
-## Shaun Jackman
-
-| [BC Cancer Agency Genome Sciences Centre][]
-| Vancouver, Canada
-| [\@sjackman][] | [github.com/sjackman][] | [sjackman.ca][]
-
-![](images/sjackman.jpg)
 
 ------------------------------------------------------------
 
