@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Shaun D Jackman">
+  <meta name="dcterms.date" content="2016-07-09">
+  <title>Homebrewing Science</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title">Homebrewing Science</h1>
+  <h2 class="author">Shaun D Jackman</h2>
+  <h3 class="date">2016-07-09</h3>
+</section>
+
+<section id="homebrewing-science" class="slide level2">
+<h1>Homebrewing Science</h1>
+<h3 id="with-linuxbrew-and-homebrew">with Linuxbrew and Homebrew</h3>
+<p>Shaun Jackman, Inanc Birol<br />
+<a href="http://twitter.com/sjackman">@sjackman</a> | <a href="https://github.com/sjackman">github.com/sjackman</a> | <a href="http://sjackman.ca">sjackman.ca</a></p>
+<p><a href="http://bcgsc.ca">BC Cancer Agency Genome Sciences Centre</a><br />
+Vancouver, Canada</p>
+<p><a href="http://creativecommons.org/licenses/by/4.0/"><img src="images/cc-by.png" alt="Creative Commons Attribution License" /></a><br />
+<a href="https://github.com/sjackman/linuxbrew-slides">Slides on GitHub</a></p>
+</section>
+<section><section id="reproducible-science" class="titleslide slide level1"><h1>Reproducible Science</h1></section><section id="reproducible-science-1" class="slide level2">
+<h1>Reproducible Science</h1>
+<p>With the manuscript, someone can…</p>
+<ul>
+<li>Reproduce an experiment</li>
+<li>Generate new data</li>
+<li>Repeat the data analysis</li>
+<li>Draw the same conclusions</li>
+</ul>
+</section><section id="repeatable-science" class="slide level2">
+<h1>Repeatable Science</h1>
+<p>With the data and source code, someone can…</p>
+<ul>
+<li>Repeat the analysis</li>
+<li>Reproduce the same results</li>
+<li>The analysis is repeatable by yourself</li>
+<li>Hopefully repeatable by others as well!</li>
+</ul>
+</section><section id="reproducible-and-repeatable" class="slide level2">
+<h1>Reproducible and Repeatable</h1>
+<p>Science is built on reproducible experiments.</p>
+<p>Reproducible experiments requires repeatable analyses.</p>
+</section><section id="to-repeat-an-analysis" class="slide level2">
+<h1>To Repeat an Analysis</h1>
+<ul>
+<li>Requires data (Open Science)</li>
+<li>Requires tools (Open Source)</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Requires inexhaustible patience<br />
+to install the tools and their dependencies</li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<figure>
+<img src="images/dependency-graph.png" alt="Dependencies of a few bioinformatics tools" /><figcaption>Dependencies of a few bioinformatics tools</figcaption>
+</figure>
+</section></section>
+<section><section id="linuxbrew-homebrew" class="titleslide slide level1"><h1>Linuxbrew Homebrew</h1></section><section id="homebrew" class="slide level2">
+<h1>Homebrew</h1>
+<figure>
+<img src="images/homebrew.png" alt="The missing package manager for Mac OS X" /><figcaption>The missing package manager for Mac OS X</figcaption>
+</figure>
+</section><section id="linuxbrew" class="slide level2">
+<h1>Linuxbrew</h1>
+<figure>
+<img src="images/linuxbrew.png" alt="The Homebrew package manager for Linux" /><figcaption>The Homebrew package manager for Linux</figcaption>
+</figure>
+</section><section id="linuxbrew-1" class="slide level2">
+<h1>Linuxbrew</h1>
+<ul>
+<li>Install software packages where you want</li>
+<li>Takes care of recursive dependencies</li>
+<li>No need for root access or sudo</li>
+<li>Use the same package manager on your<br />
+Mac laptop and Linux server</li>
+<li>Supports any Linux distribution from the last decade</li>
+<li>Easily install recent versions of gcc and glibc<br />
+in your home directory</li>
+</ul>
+</section><section id="linuxbrew-2" class="slide level2">
+<h1>Linuxbrew</h1>
+<ul>
+<li>Up-to-date software, including bioinformatics</li>
+<li>Install precompiled binary packages or from source</li>
+<li>Install an entire pipeline of tools from a given date<br />
+in the past (future not yet supported)</li>
+</ul>
+</section><section id="homebrew-science" class="slide level2">
+<h1>Homebrew Science</h1>
+<figure>
+<img src="images/homebrew-science.png" alt="Tons of science software for Linuxbrew and Homebrew" /><figcaption>Tons of science software for Linuxbrew and Homebrew</figcaption>
+</figure>
+</section><section id="community" class="slide level2">
+<h1>Community</h1>
+<ul>
+<li>Maintained by a fervent community of<br />
+maintainers and contributors</li>
+<li>250 bioinformatics packages and 110 contributors</li>
+<li>600 science packages and 450 contributors</li>
+<li>3,600 core packages and 5,700 contributors</li>
+<li>4,400 active Linuxbrew users in 30 days</li>
+</ul>
+</section><section id="conclusion" class="slide level2">
+<h1>Conclusion</h1>
+<ul>
+<li>Open Science and Open Source are critical components of reproducible science</li>
+<li>Linuxbrew streamlines the repeatable installation of software tools</li>
+</ul>
+<p><code>brew install good-science</code></p>
+<p>Thanks to all the maintainers and contributors of Homebrew, Linuxbrew and Homebrew-Science!</p>
+</section></section>
+<section><section id="fin" class="titleslide slide level1"><h1>fin</h1></section><section class="slide level2">
+
+<figure>
+<img src="images/brew-install-samtools.gif" alt="brew install samtools" /><figcaption>brew install samtools</figcaption>
+</figure>
+</section><section class="slide level2">
+
+<figure>
+<img src="https://imgs.xkcd.com/comics/cautionary.png" alt="xkcd: Cautionary" /><figcaption><a href="https://xkcd.com/456/">xkcd: Cautionary</a></figcaption>
+</figure>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
