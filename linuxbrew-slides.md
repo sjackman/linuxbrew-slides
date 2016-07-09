@@ -123,4 +123,8 @@ fin
 
 ------------------------------------------------------------
 
+![brew install samtools](images/brew-install-samtools.gif)
+
+------------------------------------------------------------
+
 ![[xkcd: Cautionary](https://xkcd.com/456/)](https://imgs.xkcd.com/comics/cautionary.png)
